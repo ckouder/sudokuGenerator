@@ -6,6 +6,10 @@ import java.util.Random;
  */
 public class SudokuMatrix {
 
+    /**
+     * throw no available slot exception when cannot visit previous.
+     * or next slot
+     */
     private class NoAvailableSlotException extends Exception {
 
         NoAvailableSlotException(String string) {
@@ -13,55 +17,130 @@ public class SudokuMatrix {
         }
     }
 
+    /**
+     * use a chain data type to chain coordiante and its available tokens.
+     * it is an uncomplete version of linked list.
+     * @param <E> anything you want to chain
+     */
     private class Chain<E> {
 
-        private class Node {
+        /**
+         * internal class of chain to store what ever you want.
+         * @param <E>
+         */
+        private class Ring {
     
+            /** Give an id to value you want to store. */
             private final String id;
 
+            /** Value you want to store. */
             private E value;
 
-            private Node previous;
+            /** Previous ring on the chain. */
+            private Ring previous;
 
-            Node(final String setId, final E setValue, final Node setPrevious) {
+            /**
+             * create a ring with given value.
+             * @param setId id of the ring
+             * @param setValue value of the ring
+             * @param setPrevious previous ring
+             */
+            Ring(final String setId, 
+                 final E setValue, 
+                 final Ring setPrevious) {
+
                 id = setId;
                 value = setValue;
                 previous = setPrevious;
             }
 
+            /** 
+             * Get id of the ring. 
+             */
             public String getId() {
                 return id;
             }
 
+            /** 
+             * Get value of the ring. 
+             */
             public E getValue() {
                 return value;
             }
 
+            /**
+             * Set ring value.
+             * @param setValue value you want to store.
+             */
             public void setValue(final E setValue) {
                 value = setValue;
             }
 
-            public Node getPrevious() {
+            /**
+             * Get previous ring.
+             * @return previous ring
+             */
+            public Ring getPrevious() {
                 return previous;
             }
 
-            public void setPrevious(final Node setPrevious) {
+            /**
+             * Set previous ring.
+             * @param setPrevious Ring you want to be the previous one.
+             */
+            public void setPrevious(final Ring setPrevious) {
                 previous = setPrevious;
             }
         }
 
-        private Node root;
+        /** The root ring on chain. */
+        private Ring root;
 
+        /** Construct an empty chain. */
         Chain() { }
 
-        public Node add(final String id, final E value) {
-            final Node node = new Node(id, value, root);
-            root = node;
-
-            return node;
+        /**
+         * Get root ring.
+         * @return root
+         */
+        public Ring getRoot() {
+            return root;
         }
 
-        private Node getFromId(final Node current, final String id) {
+        /**
+         * Set root ring.
+         * @param setRoot root Ring you want to be
+         */
+        public void setRoot(Ring setRoot) {
+            root = setRoot;
+        }
+
+        /**
+         * Add a ring to chain.
+         * @param id id of the ring
+         * @param value value you want to store
+         * @return Ring itself
+         */
+        public Ring add(
+            final String id, 
+            final E value) {
+
+            Ring ring = new Ring(id, value, root);
+            root = ring;
+
+            return ring;
+        }
+
+        /**
+         * Get a ring from a specific ring on chain.
+         * @param current ring you want to start search 
+         * @param id id of the ring
+         * @return Ring if found. null if not
+         */
+        private Ring getFromId(
+            final Ring current, 
+            final String id) {
+
             if (current == null || current.getId().equals(id)) {
                 return current;
             }
@@ -69,27 +148,45 @@ public class SudokuMatrix {
             return getFromId(current.previous, id);
         }
 
-        public Node getById(final String id) {
+        /**
+         * Get a ring by its id.
+         * @param id id of the ring
+         * @return Ring if found, null if not
+         */
+        public Ring getById(final String id) {
             return getFromId(root, id);
         }
     }
 
+    /** Initialization limit for the matrix, will reinitialize if surpass the limit. */
     private static final int INITIALIZATION_LIMIT = 10000;
 
+    /** ASCII code start point for tokens, default 'A'. */
     private static final int TOKEN_START_POINT = 65;
 
+    /** Unit block size of the matrix. */
     private final int blockSize;
 
+    /** Size of the matrix, equals to the square of blockSize. */
     private final int size;
 
+    /** Tokens of the matrix. */
     private final char[] tokens;
 
+    /** Paper to be draw. */
     private char[][] paper;
 
+    /** Internal counter to count the limit. */
     private int counter;
 
+    /** Chain to store coordinate and available tokens. */
     private Chain<ArrayList<Character>> posTokensChain = new Chain<>();
 
+    /**
+     * Initialize a SudokuMatrix.
+     * @param setBlockSize unit block size of the matrix
+     * @throws Exception if block size is too big
+     */
     SudokuMatrix(final int setBlockSize) throws Exception {
         if (setBlockSize > 16) {
             throw new Exception("block size [" + setBlockSize + "] is too large");
@@ -108,6 +205,9 @@ public class SudokuMatrix {
         initialize();
     }
 
+    /**
+     * initialize a sudoku matrix with given tokens and fill it up.
+     */
     void initialize() {
 
         // initizalize paper with placeholder tokens
@@ -124,9 +224,10 @@ public class SudokuMatrix {
         counter = 0;
 
         // fill up diagonal blocks
+        fillDiagWithRandomTokens();
 
         // fill up remaining blocks
-
+        fillAll();
     }
 
     /**
@@ -194,11 +295,16 @@ public class SudokuMatrix {
         }
     }
 
+    /**
+     * Fill an available slot on paper.
+     * @param coordinate [int col, int row] pair
+     * @return if fill one slot successfully.
+     */
     private boolean fillOne(final int[] coordinate) {
         ArrayList<Character> tokenList = getAvailableTokensForSlot(coordinate);
 
         if (tokenList.size() == 0) {
-            posTokensChain.root = posTokensChain.root.previous;
+            posTokensChain.setRoot(posTokensChain.root.getPrevious());
             paper[coordinate[0]][coordinate[1]] = ' ';
             return false;
 
@@ -221,6 +327,9 @@ public class SudokuMatrix {
         }
     }
 
+    /**
+     * Fill all slots on paper.
+     */
     private void fillAll() {
         int[] coordinate;
         try {
@@ -252,6 +361,12 @@ public class SudokuMatrix {
         }
     }
 
+    /**
+     * Get previous available slot for filling up.
+     * @param coordinate [int col, int row] pair
+     * @return [int col, int row] pair
+     * @throws NoAvailableSlotException if no available slot before
+     */
     private int[] getPreviousSlot(final int[] coordinate) throws NoAvailableSlotException{
         if (coordinate[0] == blockSize && coordinate[1] == 0) {
             throw new NoAvailableSlotException(
@@ -259,7 +374,7 @@ public class SudokuMatrix {
         }
 
         int[] c = coordinate;
-        while (true) {
+        do {
             if (c[0] == 0 && c[1] > 0) {
                 c[0] = size - 1;
                 c[1] -= 1;
@@ -269,14 +384,17 @@ public class SudokuMatrix {
                 c[0] -= 1;
             }
 
-            if (!isPosInDiagonalBlocks(c)) {
-                break;
-            }
-        }
+        } while (!isPosInDiagonalBlocks(c));
 
         return c;
     }
 
+    /**
+     * Get next available slot for filling up.
+     * @param coordinate [int col, int row] pair
+     * @return [int col, int row] pair
+     * @throws NoAvailableSlotException if no available slot after
+     */
     private int[] getNextSlot(final int[] coordinate) throws NoAvailableSlotException {
         if (coordinate[1] == size - 1 && coordinate[0] == size - blockSize - 1) {
             throw new NoAvailableSlotException(
@@ -302,6 +420,11 @@ public class SudokuMatrix {
         return c;
     }
 
+    /**
+     * Determine if given coordinate is in diagonal blocks.
+     * @param coordinate [int col, int row] pair
+     * @return if given coordinate is in diagonal blocks
+     */
     private boolean isPosInDiagonalBlocks(final int[] coordinate) {
         for (int i = 0; i < blockSize; i++) {
             if ((coordinate[0] >= blockSize * i) && (coordinate[0] <= blockSize * (i + 1))
@@ -313,8 +436,13 @@ public class SudokuMatrix {
         return false;
     }
 
+    /**
+     * Get available tokens for a given slot and store it in posTokensChain
+     * @param coordinate [int col, int row] pair
+     * @return list of available tokens
+     */
     private ArrayList<Character> getAvailableTokensForSlot(final int[] coordinate) {
-        SudokuMatrix.Chain.Node ts = posTokensChain
+        SudokuMatrix.Chain<ArrayList<Character>>.Ring ts = posTokensChain
             .getById("" + coordinate[0] + " " + coordinate[1]);
         
         if (ts == null) {
