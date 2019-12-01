@@ -12,6 +12,13 @@ public class SudokuMatrix {
      */
     private class NoAvailableSlotException extends Exception {
 
+        /** Some strange uid. */
+        private static final long serialVersionUID = 1L;
+
+        /**
+         * No available slot exception
+         * @param string message
+         */
         NoAvailableSlotException(String string) {
             super(string);
         }
@@ -206,6 +213,28 @@ public class SudokuMatrix {
     }
 
     /**
+     * @return the paper
+     */
+    char[][] getPaper() {
+        return paper;
+    }
+
+    @Override
+    public String toString() {
+        StringBuilder s = new StringBuilder();
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                s.append(paper[i][j]);
+                s.append(" ");
+            }
+            s.append("\n");
+        }
+
+        return s.toString();
+    }
+
+    /**
      * initialize a sudoku matrix with given tokens and fill it up.
      */
     void initialize() {
@@ -331,9 +360,9 @@ public class SudokuMatrix {
      * Fill all slots on paper.
      */
     private void fillAll() {
-        int[] coordinate;
+        int[] coordinate = new int[] { 0, 0 };
         try {
-            coordinate = getNextSlot(new int[] { 0, 0 });
+            coordinate = getNextSlot(coordinate);
 
         } catch (NoAvailableSlotException e1) {
             e1.printStackTrace();
