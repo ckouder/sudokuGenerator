@@ -372,6 +372,15 @@ public class SudokuMatrix {
 
         while (true) {
             try {
+
+                System.out.println(
+                    "Try filling up ["
+                    + coordinate[1]
+                    + ", "
+                    + coordinate[0]
+                    + "]"
+                );
+                
                 if (fillOne(coordinate)) {
                     coordinate = getNextSlot(coordinate);
 
@@ -503,6 +512,14 @@ public class SudokuMatrix {
 
             ts = posTokensChain.add(Helper.generateId(coordinate), tokenValues);
         }
+
+        System.out.println(
+            "get available tokens for ["
+            + coordinate[1]
+            + ", "
+            + coordinate[0]
+            + "]: "
+            + ts.value);
 
         return (ArrayList<Character>) ts.getValue();
     }
