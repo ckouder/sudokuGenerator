@@ -10,12 +10,16 @@ public class Helper {
         char[] j = l;
 
         for (int i = 0; i < j.length; i++) {
-            int k = new Random().nextInt(j.length) + i;
+            int k = new Random().nextInt(j.length - i) + i;
             char temp = j[i];
             j[i] = j[k];
             j[k] = temp;
         }
 
         return j;
+    }
+
+    static String generateId(final int[] coordinate) {
+        return "" + coordinate[0] + " " + coordinate[1];
     }
 }

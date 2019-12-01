@@ -240,6 +240,7 @@ public class SudokuMatrix {
     void initialize() {
 
         // initizalize paper with placeholder tokens
+        paper = new char[size][size];
         for (int i = 0; i < size; i++) {
             for (int j = 0; j < size; j++) {
                 paper[i][j] = ' ';
@@ -342,6 +343,7 @@ public class SudokuMatrix {
             paper[coordinate[0]][coordinate[1]] = tokenList.get(i);
             
             tokenList.remove(i);
+            posTokensChain.getById(Helper.generateId(coordinate)).setValue(tokenList);
             return true;
         }
     }
@@ -472,7 +474,7 @@ public class SudokuMatrix {
      */
     private ArrayList<Character> getAvailableTokensForSlot(final int[] coordinate) {
         SudokuMatrix.Chain<ArrayList<Character>>.Ring ts = posTokensChain
-            .getById("" + coordinate[0] + " " + coordinate[1]);
+            .getById(Helper.generateId(coordinate));
         
         if (ts == null) {
             ArrayList<Character> tokenValues = new ArrayList<>();
@@ -499,7 +501,7 @@ public class SudokuMatrix {
                 tokenValues.remove(b);
             }
 
-            ts = posTokensChain.add("" + coordinate[0] + " " + coordinate[1], tokenValues);
+            ts = posTokensChain.add(Helper.generateId(coordinate), tokenValues);
         }
 
         return (ArrayList<Character>) ts.getValue();
