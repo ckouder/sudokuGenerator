@@ -485,19 +485,19 @@ public class SudokuMatrix {
                 coordinate[1] / blockSize,
             });
             
-            for (char t : tokens) {
+            for (Character t : tokens) {
                 tokenValues.add(t);
             }
 
-            for (char c : colValues) {
+            for (Character c : colValues) {
                 tokenValues.remove(c);
             }
 
-            for (char r : rowValues) {
+            for (Character r : rowValues) {
                 tokenValues.remove(r);
             }
 
-            for (char b : blockValues) {
+            for (Character b : blockValues) {
                 tokenValues.remove(b);
             }
 
