@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="812" viewBox="0 0 375 812">
+  <defs>
+    <clipPath id="clip-HistoryRecord">
+      <rect width="375" height="812"/>
+    </clipPath>
+  </defs>
+  <g id="HistoryRecord" clip-path="url(#clip-HistoryRecord)">
+    <rect width="375" height="812"/>
+    <text id="Sudoku_" data-name="Sudoku/&gt;" transform="translate(20 130)" fill="#28fe14" font-size="48" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="0" y="0">Sudoku/&gt;</tspan></text>
+    <text id="_Programer" data-name="&lt;Programer" transform="translate(20 76)" fill="#28fe14" font-size="52" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="0" y="0">&lt;Programer</tspan></text>
+    <text id="_highest-score_" data-name="&lt;highest-score&gt;" transform="translate(40 182)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700" opacity="0.5"><tspan x="0" y="0">&lt;highest-score&gt;</tspan></text>
+    <text id="_date_" data-name="&lt;date&gt;" transform="translate(60 209)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700" opacity="0.5"><tspan x="0" y="0">&lt;date&gt;</tspan></text>
+    <text id="_creator_" data-name="&lt;creator&gt;" transform="translate(60 317)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700" opacity="0.5"><tspan x="0" y="0">&lt;creator&gt;</tspan></text>
+    <text id="_date_2" data-name="&lt;/date&gt;" transform="translate(60 263)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700" opacity="0.5"><tspan x="0" y="0">&lt;/date&gt;</tspan></text>
+    <text id="_creator_2" data-name="&lt;/creator&gt;" transform="translate(60 371)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700" opacity="0.5"><tspan x="0" y="0">&lt;/creator&gt;</tspan></text>
+    <text id="_highest-score_2" data-name="&lt;/highest-score&gt;" transform="translate(34 398)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700" opacity="0.5"><tspan x="0" y="0">&lt;/highest-score&gt;</tspan></text>
+    <text id="Back" transform="translate(188 766)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-28.8" y="0">Back</tspan></text>
+    <text id="_25360000_ms" data-name="25360000 ms" transform="translate(60 290)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700" opacity="0.996"><tspan x="0" y="0">25360000 ms</tspan></text>
+    <text id="_2019-11-30" data-name="2019-11-30" transform="translate(80 236)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700" opacity="0.7"><tspan x="0" y="0">2019-11-30</tspan></text>
+    <text id="You" transform="translate(80 344)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="0" y="0">You</tspan></text>
+  </g>
+</svg>

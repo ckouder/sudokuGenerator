@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="620" height="812" viewBox="0 0 620 812">
+  <defs>
+    <clipPath id="clip-Ui_configurations">
+      <rect width="620" height="812"/>
+    </clipPath>
+  </defs>
+  <g id="Ui_configurations" data-name="Ui configurations" clip-path="url(#clip-Ui_configurations)">
+    <rect width="620" height="812"/>
+    <text id="Sudoku_" data-name="Sudoku/&gt;" transform="translate(20 130)" fill="#28fe14" font-size="48" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="0" y="0">Sudoku/&gt;</tspan></text>
+    <text id="_Programer" data-name="&lt;Programer" transform="translate(20 76)" fill="#28fe14" font-size="52" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="0" y="0">&lt;Programer</tspan></text>
+    <text id="_highest-score_" data-name="&lt;highest-score&gt;" transform="translate(40 182)" fill="rgba(40,254,20,0.5)" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="0" y="0">&lt;highest-score&gt;</tspan></text>
+    <text id="_date_" data-name="&lt;date&gt;" transform="translate(60 209)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700" opacity="0.5"><tspan x="0" y="0">&lt;date&gt;</tspan></text>
+    <text id="_creator_" data-name="&lt;creator&gt;" transform="translate(60 317)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700" opacity="0.5"><tspan x="0" y="0">&lt;creator&gt;</tspan></text>
+    <text id="_date_2" data-name="&lt;/date&gt;" transform="translate(60 263)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700" opacity="0.5"><tspan x="0" y="0">&lt;/date&gt;</tspan></text>
+    <text id="_creator_2" data-name="&lt;/creator&gt;" transform="translate(60 371)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700" opacity="0.5"><tspan x="0" y="0">&lt;/creator&gt;</tspan></text>
+    <text id="_highest-score_2" data-name="&lt;/highest-score&gt;" transform="translate(34 398)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700" opacity="0.5"><tspan x="0" y="0">&lt;/highest-score&gt;</tspan></text>
+    <text id="Back" transform="translate(188 766)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-28.8" y="0">Back</tspan></text>
+    <text id="_25360000_ms" data-name="25360000 ms" transform="translate(60 290)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700" opacity="0.996"><tspan x="0" y="0">25360000 ms</tspan></text>
+    <text id="_2019-11-30" data-name="2019-11-30" transform="translate(80 236)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700" opacity="0.7"><tspan x="0" y="0">2019-11-30</tspan></text>
+    <text id="You" transform="translate(80 344)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="0" y="0">You</tspan></text>
+    <line id="Line_8" data-name="Line 8" y2="30" transform="translate(83.5 0.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_10" data-name="Line 10" y2="88" transform="translate(103.5 0.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_32" data-name="Line 32" y2="88" transform="translate(103.5 0.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_33" data-name="Line 33" y2="373.5" transform="translate(188 0.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_9" data-name="Line 9" x2="20" transform="translate(0 114.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_17" data-name="Line 17" x2="20" transform="translate(40 201.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_19" data-name="Line 19" x2="20" transform="translate(40 255.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_20" data-name="Line 20" x2="20" transform="translate(40 282.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_18" data-name="Line 18" x2="20" transform="translate(60 228.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_16" data-name="Line 16" x2="20" transform="translate(84 141.5) rotate(90)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_26" data-name="Line 26" x2="20" transform="translate(280 638.5) rotate(90)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_27" data-name="Line 27" x2="20" transform="translate(280 685.5) rotate(90)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_28" data-name="Line 28" x2="79.5" transform="translate(280 732.5) rotate(90)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_29" data-name="Line 29" y2="40" transform="translate(188 772)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_15" data-name="Line 15" x2="20" transform="translate(0 59.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_11" data-name="Line 11" x2="40.5" transform="translate(0 174.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_30" data-name="Line 30" x2="40.5" transform="translate(0 387.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_23" data-name="Line 23" x2="40.5" transform="translate(334.5 624.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_31" data-name="Line 31" x2="40.5" transform="translate(334.5 430.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_24" data-name="Line 24" x2="40.5" transform="translate(334.5 671.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_25" data-name="Line 25" x2="40.5" transform="translate(335 719.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <text id="_20" data-name="20" transform="translate(15 70)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-12" y="0">20</tspan></text>
+    <text id="_30" data-name="30" transform="translate(80 20)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-12" y="0">30</tspan></text>
+    <text id="_88" data-name="88" transform="translate(102 20)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-12" y="0">88</tspan></text>
+    <text id="Center" transform="translate(186.5 20)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-36" y="0">Center</tspan></text>
+    <text id="_20-2" data-name="20" transform="translate(15 125)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-12" y="0">20</tspan></text>
+    <text id="_20-3" data-name="20" transform="translate(55 212)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-12" y="0">20</tspan></text>
+    <text id="_20-4" data-name="20" transform="translate(55 266)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-12" y="0">20</tspan></text>
+    <text id="_20-5" data-name="20" transform="translate(55 293)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-12" y="0">20</tspan></text>
+    <text id="_20-6" data-name="20" transform="translate(75 239)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-12" y="0">20</tspan></text>
+    <text id="_20-7" data-name="20" transform="translate(80 155)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-12" y="0">20</tspan></text>
+    <text id="_20-8" data-name="20" transform="translate(276 652)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-12" y="0">20</tspan></text>
+    <text id="_20-9" data-name="20" transform="translate(276 699)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-12" y="0">20</tspan></text>
+    <text id="_80" data-name="80" transform="translate(276 776)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-12" y="0">80</tspan></text>
+    <text id="_40" data-name="40" transform="translate(184 796)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-12" y="0">40</tspan></text>
+    <text id="_40-2" data-name="40" transform="translate(15 185)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-12" y="0">40</tspan></text>
+    <text id="_40-3" data-name="40" transform="translate(15 398)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-12" y="0">40</tspan></text>
+    <text id="_40-4" data-name="40" transform="translate(370.5 635)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-12" y="0">40</tspan></text>
+    <text id="_40-5" data-name="40" transform="translate(370.5 441)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-12" y="0">40</tspan></text>
+    <text id="_40-6" data-name="40" transform="translate(370.5 682)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-12" y="0">40</tspan></text>
+    <text id="_40-7" data-name="40" transform="translate(371 730)" fill="#fff" font-size="10" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-12" y="0">40</tspan></text>
+    <g id="Rectangle_14" data-name="Rectangle 14" transform="translate(388 105)" fill="#28fe14" stroke="#28fe14" stroke-width="1">
+      <rect width="10" height="10" stroke="none"/>
+      <rect x="0.5" y="0.5" width="9" height="9" fill="none"/>
+    </g>
+    <g id="Rectangle_16" data-name="Rectangle 16" transform="translate(388 38)" fill="#28fe14" stroke="#28fe14" stroke-width="1">
+      <rect width="10" height="10" stroke="none"/>
+      <rect x="0.5" y="0.5" width="9" height="9" fill="none"/>
+    </g>
+    <g id="Rectangle_18" data-name="Rectangle 18" transform="translate(388 278)" fill="#28fe14" stroke="#28fe14" stroke-width="1">
+      <rect width="10" height="10" stroke="none"/>
+      <rect x="0.5" y="0.5" width="9" height="9" fill="none"/>
+    </g>
+    <g id="Rectangle_15" data-name="Rectangle 15" transform="translate(388 170)" fill="#28fe14" stroke="#28fe14" stroke-width="1" opacity="0.499">
+      <rect width="10" height="10" stroke="none"/>
+      <rect x="0.5" y="0.5" width="9" height="9" fill="none"/>
+    </g>
+    <g id="Rectangle_17" data-name="Rectangle 17" transform="translate(388 224)" fill="#28fe14" stroke="#28fe14" stroke-width="1" opacity="0.703">
+      <rect width="10" height="10" stroke="none"/>
+      <rect x="0.5" y="0.5" width="9" height="9" fill="none"/>
+    </g>
+    <text id="_28FE14_100_alpha" data-name="#28FE14, 100% alpha" transform="translate(401 114)" fill="#fff" font-size="12" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="0" y="0">#28FE14, 100% alpha</tspan></text>
+    <text id="_28FE14_100_alpha-2" data-name="#28FE14, 100% alpha" transform="translate(401 47)" fill="#fff" font-size="12" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="0" y="0">#28FE14, 100% alpha</tspan></text>
+    <text id="_28FE14_100_alpha-3" data-name="#28FE14, 100% alpha" transform="translate(401 287)" fill="#fff" font-size="12" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="0" y="0">#28FE14, 100% alpha</tspan></text>
+    <text id="_28FE14_50_alpha" data-name="#28FE14, 50% alpha" transform="translate(401 179)" fill="#fff" font-size="12" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="0" y="0">#28FE14, 50% alpha</tspan></text>
+    <text id="_28FE14_70_alpha" data-name="#28FE14, 70% alpha" transform="translate(401 233)" fill="#fff" font-size="12" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="0" y="0">#28FE14, 70% alpha</tspan></text>
+    <line id="Line_13" data-name="Line 13" x2="122.959" transform="translate(252.041 115.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_22" data-name="Line 22" x2="116.959" transform="translate(258.541 174.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_21" data-name="Line 21" x2="151" transform="translate(224.5 229.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <line id="Line_14" data-name="Line 14" x2="40.959" transform="translate(334.541 61.5)" fill="none" stroke="#fff" stroke-width="1"/>
+    <text id="Title:_PT_Mono_48" data-name="Title: PT Mono 48" transform="translate(388 133)" fill="#fff" font-size="12" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="0" y="0">Title: PT Mono 48</tspan></text>
+    <text id="Heading:_PT_Mono_52" data-name="Heading: PT Mono 52" transform="translate(388 66)" fill="#fff" font-size="12" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="0" y="0">Heading: PT Mono 52</tspan></text>
+    <text id="New_Game" data-name="New Game" transform="translate(335 679)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-115.2" y="0">New Game</tspan></text>
+    <text id="Continue" transform="translate(335 726)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-115.2" y="0">Continue</tspan></text>
+    <text id="History" transform="translate(335 632)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-100.8" y="0">History</tspan></text>
+    <text id="_All_or_none._" data-name="“All or none.”" transform="translate(40 395)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="0" y="0">“All or none.”</tspan></text>
+    <text id="_Game_creator" data-name="—— Game creator" transform="translate(335 435)" fill="#28fe14" font-size="16" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-144" y="0">—— Game creator</tspan></text>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="375" height="812" viewBox="0 0 375 812">
+  <defs>
+    <clipPath id="clip-startPage">
+      <rect width="375" height="812"/>
+    </clipPath>
+  </defs>
+  <g id="startPage" clip-path="url(#clip-startPage)">
+    <rect width="375" height="812"/>
+    <text id="Sudoku_" data-name="Sudoku/&gt;" transform="translate(20 130)" fill="#28fe14" font-size="48" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="0" y="0">Sudoku/&gt;</tspan></text>
+    <text id="_Programer" data-name="&lt;Programer" transform="translate(20 76)" fill="#28fe14" font-size="52" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="0" y="0">&lt;Programer</tspan></text>
+    <text id="_All_or_none._" data-name="“All or none.”" transform="translate(40 395)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="0" y="0">“All or none.”</tspan></text>
+    <text id="_Game_creator" data-name="—— Game creator" transform="translate(335 435)" fill="#28fe14" font-size="16" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-144" y="0">—— Game creator</tspan></text>
+    <text id="New_Game" data-name="New Game" transform="translate(335 679)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-115.2" y="0">New Game</tspan></text>
+    <text id="Continue" transform="translate(335 726)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-115.2" y="0">Continue</tspan></text>
+    <text id="History" transform="translate(335 632)" fill="#28fe14" font-size="24" font-family="PTMono-Bold, PT Mono" font-weight="700"><tspan x="-100.8" y="0">History</tspan></text>
+  </g>
+</svg>
