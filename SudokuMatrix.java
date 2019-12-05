@@ -230,6 +230,22 @@ public class SudokuMatrix {
         initialize();
     }
 
+    SudokuMatrix(final int setBlockSize, final char[] tokenList) throws Exception {
+        if (setBlockSize > 16) {
+            throw new Exception("block size [" + setBlockSize + "] is too large");
+        }
+        blockSize = setBlockSize;
+
+        size = (int) Math.pow(blockSize, 2);
+
+        if (tokenList.length != size) {
+            throw new Exception("token list length doesn't match sudoku size");
+        }
+        tokens = tokenList;
+
+        initialize();
+    }
+
     /**
      * @return the paper
      */
@@ -559,8 +575,15 @@ public class SudokuMatrix {
     }
 
     public static void main(String[] args) {
+        final char[] SUDOKU_TOKENS = new char[] {
+            '0', '1', '2', '3', 
+            '4', '5', '6', '7', 
+            '8', '9', 'A', 'B', 
+            'C', 'D', 'E', 'F'
+        };
+
         try {
-            SudokuMatrix sudokuTest = new SudokuMatrix(4);
+            SudokuMatrix sudokuTest = new SudokuMatrix(4, SUDOKU_TOKENS);
             System.out.println(sudokuTest.toString());
 
         } catch (Exception e) { }
