@@ -253,6 +253,22 @@ public class SudokuMatrix {
         return paper;
     }
 
+    /**
+     * return the paper in integer[][]
+     * @return the paper
+     */
+    Integer[][] getPaperInInteger() {
+        Integer[][] integerPaper = new Integer[size][size];
+
+        for (int i = 0; i < size; i++) {
+            for (int j = 0; j < size; j++) {
+                integerPaper[i][j] = Integer.parseInt("" + paper[i][j], 16);
+            }
+        }
+
+        return integerPaper;
+    }
+
     @Override
     public String toString() {
         StringBuilder s = new StringBuilder();
@@ -444,26 +460,22 @@ public class SudokuMatrix {
                     "No available slot before [" + coordinate[1] + ", " + coordinate[0] + "].");
         }
 
-        int[] c = coordinate;
-
         // System.out.println("Finding previous slot for: " + c[1] + ", " + c[0]);
-        while (true) {
-            if (c[0] == 0 && c[1] > 0) {
-                c[0] = size - 1;
-                c[1] -= 1;
+        do {
+            if (coordinate[0] == 0 && coordinate[1] > 0) {
+                coordinate[0] = size - 1;
+                coordinate[1] -= 1;
             }
 
-            else if (c[1] >= 0) {
-                c[0] -= 1;
+            else if (coordinate[1] >= 0) {
+                coordinate[0] -= 1;
             }
-            if (!isPosInDiagonalBlocks(c)) {
-                break;
-            }
-        }
+
+        } while (isPosInDiagonalBlocks(coordinate));
 
         // System.out.println("Found previous slot: " + c[1] + ", " + c[0] + "\n");
 
-        return c;
+        return coordinate;
     }
 
     /**
@@ -480,7 +492,7 @@ public class SudokuMatrix {
         }
 
         int[] c = coordinate;
-        while (true) {
+        do {
             if (c[0] == size - 1 && c[1] < size - 1) {
                 c[0] = 0;
                 c[1] += 1;
@@ -490,10 +502,7 @@ public class SudokuMatrix {
                 c[0] += 1;
             }
 
-            if (!isPosInDiagonalBlocks(c)) {
-                break;
-            }
-        }
+        } while (isPosInDiagonalBlocks(c));
 
         return c;
     }
@@ -584,7 +593,7 @@ public class SudokuMatrix {
 
         try {
             SudokuMatrix sudokuTest = new SudokuMatrix(4, SUDOKU_TOKENS);
-            System.out.println(sudokuTest.toString());
+            System.out.println(sudokuTest.getPaperInInteger());
 
         } catch (Exception e) { }
     }
